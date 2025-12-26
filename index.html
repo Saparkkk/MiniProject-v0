@@ -2,12 +2,84 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Mini Project V.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project Bookstore - หน้าแรก</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* ปรับแต่งเพิ่มเติมเล็กน้อย */
+        .hero-banner {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1200x400/?library,books');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
-<body>
-    <h1>ยินดีต้อนรับสู่ระบบ (หน้าแรก)</h1>
-    <p>นี่คือ Mini Project Version 0</p>
-    <hr>
-    <a href="page2.html">คลิกเพื่อไปหน้าถัดไป >></a>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">📚 My Bookstore (V.0)</a>
+        </div>
+    </nav>
+
+    <header class="hero-banner mb-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">ยินดีต้อนรับสู่อาณาจักรหนังสือ</h1>
+            <p class="lead mb-4">ค้นพบหนังสือเล่มโปรดเล่มใหม่ของคุณได้ที่นี่ นี่คือ Mini Project Version 0</p>
+            <a href="page2.html" class="btn btn-primary btn-lg px-4 me-md-2">เข้าสู่แคตตาล็อกหนังสือ >></a>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <h2 class="text-center mb-4 display-6">หนังสือแนะนำประจำสัปดาห์</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm book-card">
+                    <img src="https://source.unsplash.com/random/300x400/?novel" class="card-img-top" alt="Book Cover">
+                    <div class="card-body">
+                        <h5 class="card-title">การผจญภัยในดินแดนโค้ด</h5>
+                        <p class="card-text text-muted">วรรณกรรมแฟนตาซีสำหรับนักพัฒนา...</p>
+                        <a href="page2.html" class="btn btn-outline-primary w-100">ดูรายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm book-card">
+                    <img src="https://source.unsplash.com/random/300x401/?tech,book" class="card-img-top" alt="Book Cover">
+                    <div class="card-body">
+                        <h5 class="card-title">เริ่มต้นกับ Git และ GitHub</h5>
+                        <p class="card-text text-muted">คู่มือฉบับย่อสำหรับผู้เริ่มต้นใช้งาน...</p>
+                        <a href="page2.html" class="btn btn-outline-primary w-100">ดูรายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm book-card">
+                    <img src="https://source.unsplash.com/random/300x399/?history,book" class="card-img-top" alt="Book Cover">
+                    <div class="card-body">
+                        <h5 class="card-title">ประวัติศาสตร์ HTML</h5>
+                        <p class="card-text text-muted">ย้อนรอยกำเนิดภาษาเว็บ...</p>
+                        <a href="page2.html" class="btn btn-outline-primary w-100">ดูรายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Saparkkk Mini Project V.0 Designed with Bootstrap.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

@@ -2,12 +2,59 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>หน้าที่ 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดหนังสือ - หน้าที่ 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>นี่คือหน้าที่ 2</h1>
-    <p>ระบบสามารถทำงานเชื่อมโยงหน้าได้สำเร็จ</p>
-    <hr>
-    <a href="index.html"><< กลับไปหน้าแรก</a>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+             <a class="navbar-brand fw-bold" href="index.html">📚 My Bookstore (V.0)</a>
+        </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+        <a href="index.html" class="btn btn-outline-secondary mb-4">
+            &larr; กลับไปหน้าแรก
+        </a>
+
+        <div class="card shadow-lg border-0 overflow-hidden">
+            <div class="row g-0">
+                <div class="col-md-5 bg-secondary d-flex align-items-center justify-content-center p-0">
+                    <img src="https://source.unsplash.com/random/500x700/?coding,book" class="img-fluid w-100 h-100 object-fit-cover" alt="Book Cover Detail">
+                </div>
+                <div class="col-md-7 p-5 bg-white">
+                    <div class="card-body p-0">
+                        <h6 class="text-primary text-uppercase fw-bold mb-3">หน้าที่ 2: รายละเอียดสินค้า</h6>
+                        <h1 class="card-title display-5 fw-bold mb-3">คัมภีร์ลับนักพัฒนาเว็บ (Web Dev Secrets)</h1>
+                        <h4 class="text-muted mb-4">ผู้เขียน: Saparkkk Studio</h4>
+                        
+                        <h3 class="text-danger fw-bold mb-4">฿ 450.00 <small class="text-muted fw-normal text-decoration-line-through">฿ 650.00</small></h3>
+                        
+                        <hr>
+                        <h5 class="mt-4">รายละเอียดโดยย่อ:</h5>
+                        <p class="card-text lead fs-6">
+                            หนังสือเล่มนี้รวบรวมเทคนิคการสร้างเว็บไซต์ตั้งแต่พื้นฐาน HTML จนถึงการนำขึ้นสู่ระบบออนไลน์ (Deploy) 
+                            เหมาะสำหรับผู้เริ่มต้นที่ต้องการสร้าง Mini Project ของตัวเองให้โดดเด่น 
+                            (นี่คือข้อความตัวอย่างสำหรับหน้า page2.html เพื่อแสดงให้เห็นว่าระบบเชื่อมโยงหน้าได้สำเร็จ)
+                        </p>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
+                             <button class="btn btn-success btn-lg px-5 me-md-2" type="button">ใส่ตะกร้า (ตัวอย่าง)</button>
+                             <a href="index.html" class="btn btn-outline-dark btn-lg px-5">กลับหน้าร้าน</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Saparkkk Mini Project V.0 Designed with Bootstrap.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
